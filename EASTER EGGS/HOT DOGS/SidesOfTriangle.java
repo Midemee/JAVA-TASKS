@@ -11,7 +11,6 @@ public class SidesOfTriangle{
 	System.out.print("Enter third side ofa triangle: ");
 	int sideC = input.nextInt();
 
-
 	if (sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA ) {
 	System.out.print("It's a valid triangle");
 	}
@@ -24,6 +23,5 @@ public class SidesOfTriangle{
 	else {
 	System.out.println("It's a scalene triangle");
 	}
-
     }
 }

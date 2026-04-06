@@ -10,7 +10,6 @@ public class HeatEnergy{
 
 	System.out.print("Enter final temperature: ");
 	double finalTemp = input.nextDouble();
-
 	double Q = waterAmount * (finalTemp - initialTemp) * 4.184;
 	System.out.printf("The energy needed is: %.2f", Q);
 

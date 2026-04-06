@@ -8,7 +8,6 @@ public class BMICalculator{
 
 	System.out.print("Enter height in inches: ");
 	double height = input.nextDouble();
-
 	double weightKg = weight * 0.45359237;
 	double heightMeters = height * 0.0254;
 	
