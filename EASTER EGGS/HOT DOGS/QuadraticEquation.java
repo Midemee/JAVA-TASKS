@@ -11,7 +11,7 @@ public class QuadraticEquation{
 	System.out.print("Enter the value for c: ");
 	double c = input.nextDouble();
 
-	double discriminant = b * b - 4 * a * c;
+	double discriminant = (b * b) - (4 * a * c);
 
 	System.out.print(discriminant);
     }

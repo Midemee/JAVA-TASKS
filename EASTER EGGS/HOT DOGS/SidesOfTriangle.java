@@ -12,24 +12,18 @@ public class SidesOfTriangle{
 	int sideC = input.nextInt();
 
 
-	if (SideA + B > sideC && sidesA + sideC > sideB && sideB + sideC > sideA ) {
+	if (sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA ) {
 	System.out.print("It's a valid triangle");
-
-	if (sideA == sideB  && sideB == sidC ) {
+	}
+	else if (sideA == sideB  && sideB == sideC ) {
 	System.out.println("It is an equilatorial triangle");
 	}
-	esle if (sideA == sideB && sideA == sideC || sideB == SiddeC) {
+	else if (sideA == sideB && sideA == sideC || sideB == sideC) {
 	System.out.println("It is an isosceles triangle");
 	}
 	else {
-	("It's a scaleme triangle");
+	System.out.println("It's a scalene triangle");
 	}
-
-}
-
-
-
-
 
     }
 }

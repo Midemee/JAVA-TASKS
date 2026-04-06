@@ -4,6 +4,7 @@ public class BMICalculator{
     Scanner input = new Scanner(System.in);
 	System.out.print("Enter weight in pounds: ");
 	double weight = input.nextDouble();
+	//Body mass index
 
 	System.out.print("Enter height in inches: ");
 	double height = input.nextDouble();
