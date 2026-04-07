@@ -13,6 +13,7 @@ public class Descending{
 	int numThree = input.nextInt();
 
 	int highest = 0;
+	int lowest = 0;
 
 	if(numOne > numTwo && numOne > numThree) {
 	highest = numOne;
@@ -24,7 +25,15 @@ public class Descending{
 	highest = numThree;
 	}
 
-	System.out.print(highest);
-
+	if(numOne < numTwo && numOne < numThree) {
+	lowest = numOne;
+	}
+	else if(numTwo < numOne && numTwo < numThree) {
+	highest = numTwo;
+	}
+	if(numThree < numOne && numThree < numTwo) {
+	lowest = numThree;
+	}
+	System.out.printf("%d,%d", highest, lowest);
     }
 } 
