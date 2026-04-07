@@ -14,9 +14,14 @@ public class AverageScore{
 
 	double average = (score1 + score2 + score3) / 3;
 
-	// double grade = average * 0.40;
+	double highest = average * 0.40;
+	double middle = average * 0.35;
+	double lowest = average * 0.25;
 
-	if (average >= 0.36 && average <= 0.40) {
+	System.out.printf("Highest: %.2f%nMiddle: %.2f%nLowest: %.2f", highest, middle, lowest);
+	
+
+	/*if (average >= 0.36 && average <= 0.40) {
 	System.out.println("Highest");
 	}
 	else if (average >= 0.26 && average <= 0.35) {
@@ -27,7 +32,7 @@ public class AverageScore{
 	}
 	else {
 	System.out.println("Invalid");
-	} 
+	}*/
 
     }
 } 
