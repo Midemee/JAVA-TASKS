@@ -15,8 +15,8 @@ public class Fraction{
 	System.out.print("Enter second denominator : ");
 	double DenTwo= input.nextDouble();
 
-	double resultOne = numOne/numTwo;
-	double resultTwo = DenOne/DenTwo;
+	double resultOne = numOne/DenOne;
+	double resultTwo = numTwo/DenTwo;
 
 	double add = resultOne + resultTwo;
 	double subtract = resultOne - resultTwo;
