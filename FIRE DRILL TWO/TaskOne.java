@@ -3,19 +3,18 @@ public class TaskOne{
     public static void main(String[] args){
     Scanner userInput = new Scanner(System.in);
 
-    int count = 1;
+    int gradeCount = 1;
     int sum = 0;
-	while (count <= 10) {
+	while (gradeCount <= 10) {
 
 	System.out.print("Enter a score: ");
     int score = userInput.nextInt();
 
 	sum = sum + score;
-    int total = sum;
-    count++;
-    System.out.print(total);
-	}
-	
-}
-}
 
+    gradeCount++;
+	}
+
+	System.out.println("Sum = " + sum);
+}
+}
