@@ -20,3 +20,5 @@ public class TaskThree{
     System.out.printf("Average = %.2f ", average);
 }
 }
+
+//collect 10 scores and print sum and average

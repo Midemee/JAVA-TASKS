@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class TaskOne{
+public class TaskSix{
     public static void main(String[] args){
     Scanner userInput = new Scanner(System.in);
 
@@ -9,13 +9,14 @@ public class TaskOne{
 
 	System.out.print("Enter a score: ");
     int score = userInput.nextInt();
-
-	sum = sum + score;
-
+    if (score % 2 == 0) {
+    sum = sum + score;
+    }
     gradeCount++;
 	}
+    double average = (double)sum / gradeCount;
+    System.out.printf("Average = %.2f ", average);
+}
+}
 
-	System.out.println("Sum = " + sum);
-}
-}
-//collect 10 scores and print sum
+//print average of task 5

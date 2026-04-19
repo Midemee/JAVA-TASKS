@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class TaskOne{
+public class TaskFive{
     public static void main(String[] args){
     Scanner userInput = new Scanner(System.in);
 
@@ -9,13 +9,13 @@ public class TaskOne{
 
 	System.out.print("Enter a score: ");
     int score = userInput.nextInt();
-
-	sum = sum + score;
-
+    if (score % 2 == 0) {
+    sum = sum + score;
+    }
     gradeCount++;
 	}
 
-	System.out.println("Sum = " + sum);
+	System.out.println("Sum of even numbers = " + sum);
 }
 }
-//collect 10 scores and print sum
+//collect 10 scores and print sum of only the even numbers in the collected score
