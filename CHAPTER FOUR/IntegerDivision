@@ -1,0 +1,9 @@
+/* 4.11
+Explain what happens when a Java program attempts to divide one integer by another.
+What happens to the fractional part of the calculation? How can you avoid that outcome?*/
+
+In Integer division, Java divides and keeps only the whole number but discards the decimal part.
+To avoid this, use the unary cast operator to make the result a floating-point instaed of integer. i.e Out of the two integers, one should be promoted to a double
+e.g int numberOne = 9;
+    int numberTwo = 2;
+    double result = (double)numberOne / numberTwo

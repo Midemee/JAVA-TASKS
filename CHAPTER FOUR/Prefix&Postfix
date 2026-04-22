@@ -1,0 +1,5 @@
+4.14 If integers x and y are set to 7 and 3, what is the value of x after x = y++ and x = ++y?
+
+x = y++ (prints out 3)
+x = ++y (prints out 4)
+This is a case of postincrement and preincrementing  or postfix/prefix

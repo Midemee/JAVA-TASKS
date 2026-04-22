@@ -1,0 +1,22 @@
+4.12 Describe the two ways in which control statements can be combined.
+
+1. Nested inside one another i.e a controlstatement inside another
+e.g while (score <= 10) {
+        System.out.print("Enter grade:);
+        while (result != 2) {
+            System.out.print("Invalid!");
+    }
+
+2. Single entry-Single exit control statement or stacking
+e.g if (score <= 10) {
+        System.out.print("Grade A");
+    }
+
+    if (score <= 6) {
+        System.out.print("Grade B");
+    }
+ 
+     if (score <= 4) {
+        System.out.print("Grade C");
+    }
+ 

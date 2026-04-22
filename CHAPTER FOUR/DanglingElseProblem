@@ -1,0 +1,9 @@
+ /* 4.27 Dangling-else problem
+
+ if (x > 5)
+ if (y > 5)
+ System.out.println("x and y are > 5");
+ else
+ System.out.println("x is <= 5");
+
+The indentation makes it look like the else belongs to the outer if (x > 5), but Java actually pairs the else with the nearest preceding if which is if (y > 5)*/

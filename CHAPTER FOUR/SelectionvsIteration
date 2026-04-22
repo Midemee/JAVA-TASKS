@@ -1,0 +1,15 @@
+/* 4.10
+Compare and contrast the if single-selection statement and the while iteration statement.
+How are these two statements similar? How are they different?*/
+
+SIMILARITIES
+They both take a boolean a boolean condition (True/False)
+They both execute a block of code within curly braces {} when the condition is true and skip the entire block of code while the condition is false.
+They have similar structure
+
+DIFFERENCES
+"If" is a selection statement, "while" is an iteration statement
+"If" is used to make a decision, "While" is used to create loop or repetition
+"If" runs a block block of code once, if it is TRUE, while runs a block of code repeadtedly if its TRUE
+"If" condition is only checked once, "While" condition is checked at every loop or iteration 
+

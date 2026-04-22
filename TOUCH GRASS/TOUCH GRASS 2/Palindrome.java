@@ -3,9 +3,24 @@ public class Palindrome{
         if(number < 10000 && number > 99999){
             return false;
         }
+        else{
         int firstStep = number % 10;
-        int secondStep = number / 10;
+        number /= 10;
+        int secondStep = number % 10;
+        number /= 10;
+        int thirdStep = number % 10;
+        number /= 10;
+        int fourthStep = number % 10;
+        number /= 10;
+        int fifthStep = number % 10;
+        number /= 10;
+
+        if (firstStep == fifthStep) {
             return true;
+        }
+
+        }
+
     }
 
     public static void main(String[]args){

@@ -1,0 +1,8 @@
+4.13 What type of repetition would be appropriate for obtaining an input from the user until the
+user indicates there is no more input to provide? What type would be appropriate for calculating
+the factorial of 5? Briefly describe how each of these tasks could be performed.
+
+ANSWER
+For indefinite input from user, Sentinel-controlled iteration is appropriate. Because the number of iterations is unknown before the loop starts, a sentinel value is used to end the loop
+
+For definite iteration like factorial of 5, the counter-controlled iteration is appropriate. Because the number of iterations is known before the loop starts. i.e the loop willl run 5 times
