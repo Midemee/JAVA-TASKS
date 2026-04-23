@@ -1,0 +1,10 @@
+4.35 (Write a Java statement) What will be the value of x after executing the following Java
+statement? Assume that value of x is 5 before the execution.
+x += x++ - 5;
+
+This is a casse of posticrement, it uses the current value of X first the increments it
+x= 5 = (5-5)
+x= 5 + (0)
+x=5
+
+it uses the current value of X first, the increases after
