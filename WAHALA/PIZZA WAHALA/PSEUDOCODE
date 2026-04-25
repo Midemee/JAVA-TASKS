@@ -1,0 +1,38 @@
+PIZZA WAHALA
+PSEDOCODE
+TOP LEVEL
+The program collects order details for 45 guests and the pizza type then displays how many boxes to to buy, left over slices and the total cost of boxes bought.
+
+STEP-WISE REFINEMENT
+create first function to display the menu
+create a function to calculate the order based on the user choice
+declare variable pizzaType and initialise to ""
+declare variable Slices and intialise to 0
+declare variable Price and initialise to 0
+
+use switch to compare userChoice, switch cases from one pizza menu to another
+Calculate
+declare variable numberOfBoxes and initialise to 0
+declare variable leftOverslice and intialise to 0
+declare variable Remainder and initialise to 0
+
+if remainder is equal to 0
+numberOfBoxes equals to numberOfGuests divided by slices
+leftover equals to zero
+else
+numberOfBoxes equals to numberOfGuests divided by slices plus one to round it up
+leftover equals slices - remainder
+totalPrice = numberOfBoxes * price
+
+print out the total of boxes, total price and leftover
+
+In the main method
+display the menu function
+collect user input for choice of pizza and number of guests
+display the calculate Order Function
+
+
+
+
+
+
