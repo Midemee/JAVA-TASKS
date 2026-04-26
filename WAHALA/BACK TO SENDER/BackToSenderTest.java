@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class BackToSenderTest {
 
     @Test
-    public void testLessThan50Percent() {
+    public void testLessThanFiftyPercent() {
         int deliveries = 25;
         int result = BackToSender.calculateWage(deliveries);
         int expected = 9000;

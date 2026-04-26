@@ -1,17 +1,50 @@
 BACK TO SENDER
 PSEUDOCODE
 TOP LEVEL
-A function that receives number of successful deliveries and calculates the rider's wage for the day
+Test the function that receives number of successful deliveries and calculates the rider's wage for the day
 
 STEP-WISE REFINEMENT
+Test One
+Test for deliveries less than 50 percent
+declare variable for actual deliveries, initialise value to test 
+declare variable for expected result, initialise value to test
+Test to fail first
+
+Write the function to make the test pass
 declare basepay and initialise to 5000
 declare amount per parcel and initialise to 0
-if successful deliveries is greater than or equal to 70%, amount per parcel equals 500
-else if successful deliveries is greater than or equal to 60%, amount per parcel equals 250
-else if successful deliveries is greater than or equal to 50%, amount per parcel equals 200
-else amount per parcel equals 160
+if successful delivery is less than 50%, amount per parcel equals 160
+return (deliveries multiplied by amount per parcel) plus the base pay
+
+Test Two
+Test for deliveries from 50 to 59%
+declare variable for actual deliveries, initialise value to test 
+declare variable for expected result, initialise value to test
+Test to fail first
+
+Write the function to make the test pass
+if successful deliveries is less than or equal to 59%, amount per parcel equals 200
+return (deliveries multiplied by amount per parcel) plus the base pay
+
+Test Three
+Test for deliveries from 60 t0 69%
+declare variable for actual deliveries, initialise value to test 
+declare variable for expected result, initialise value to test
+Test to fail first
+
+Write the function to make the test pass
+if successful deliveries is less than or equal to 69%, amount per parcel equals 250
+return (deliveries multiplied by amount per parcel) plus the base pay
+
+Test Four
+Test for deliveries from 70% and above
+declare variable for actual deliveries, initialise value to test 
+declare variable for expected result, initialise value to test
+Test to fail first
+
+Write the function to make the test pass
+if successful equal to 70% and above, amount per parcel equals 500
 
 return (deliveries multiplied by amount per parcel) plus the base pay
 
-Start testing bit by bit
 
