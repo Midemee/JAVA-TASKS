@@ -1,0 +1,17 @@
+BACK TO SENDER
+PSEUDOCODE
+TOP LEVEL
+A function that receives number of successful deliveries and calculates the rider's wage for the day
+
+STEP-WISE REFINEMENT
+declare basepay and initialise to 5000
+declare amount per parcel and initialise to 0
+if successful deliveries is greater than or equal to 70%, amount per parcel equals 500
+else if successful deliveries is greater than or equal to 60%, amount per parcel equals 250
+else if successful deliveries is greater than or equal to 50%, amount per parcel equals 200
+else amount per parcel equals 160
+
+return (deliveries multiplied by amount per parcel) plus the base pay
+
+Start testing bit by bit
+
