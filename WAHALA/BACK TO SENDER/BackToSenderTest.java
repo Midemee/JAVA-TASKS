@@ -1,25 +1,37 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class BackToSenderTest{
+public class BackToSenderTest {
+
     @Test
-    public void testLessThanFiftyPercent(){
-    assertEquals(9000, BackToSender.calculateWage(25));
+    public void testLessThan50Percent() {
+        int deliveries = 25;
+        int result = BackToSender.calculateWage(deliveries);
+        int expected = 9000;
+        assertEquals(expected, result);
     }
 
     @Test
-    public void testFiftyToFiftyNinePercent(){
-    assertEquals(15000, BackToSender.calculateWage(50));
+    public void testFiftyToFiftyNinePercent() {
+        int deliveries = 50;
+        int result = BackToSender.calculateWage(deliveries);
+        int expected = 15000;
+        assertEquals(expected, result);
     }
 
     @Test
-    public void testSixtyToSixtyNinePercent(){
-    assertEquals(20000, BackToSender.calculateWage(60));
+    public void testSixtyToSixtyNinePercent() {
+        int deliveries = 60;
+        int result = BackToSender.calculateWage(deliveries);
+        int expected = 20000; 
+        assertEquals(expected, result);
     }
 
     @Test
-    public void testSeventyAbove(){
-    assertEquals(45000, BackToSender.calculateWage(80));
+    public void testSeventyPercentAndAbove() {
+        int deliveries = 80;
+        int result = BackToSender.calculateWage(deliveries);
+        int expected = 45000;
+        assertEquals(expected, result);
     }
-
 }
