@@ -22,7 +22,7 @@ public class MonthCalendar{
 	System.out.println("May");
 	}
 	else if (month == 6) {
-	System.out.println("Junwe");
+	System.out.println("June");
 	}
 	else if (month == 7) {
 	System.out.println("july");
