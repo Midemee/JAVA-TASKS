@@ -13,8 +13,8 @@ public class LargestElement{
     }
 
     public static void main(String[] args) {
-        int[] largest = {4, 20,5,8,1,9};
-    System.out.println(numbers(largest));
+        int[] number = {4, 20,92,8,1,9};
+    System.out.println(numbers(number));
 
     }
 

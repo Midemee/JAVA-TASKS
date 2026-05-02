@@ -1,0 +1,20 @@
+To calculate a menstrual app
+Based on the last menstrual period date and the average cycle length(within 21-35days) but, mostly 28days
+
+Test for...
+The next period date
+to calculate it.... the last period date + cycle length
+
+The ovulation date- 
+To calculate... last period day + the cycle length - 14
+
+The fertile window within ovulation period
+calculate it- 5 days before ovulation- 1 day after
+
+The safe period
+If isnt within the fertile window,it is safe... return true
+if it is within the fertile window, itis unsafe... return false 
+
+The current cycle
+
+

@@ -17,10 +17,7 @@ public class Palindrome{
             if(number < 10000 || number > 99999){
                 System.out.print("Invalid! Enter a five-digit number: ");
             }
-            else{
-                break;
-            }
-
+            break;
         }
 
         int firstStep = number % 10;

@@ -4,11 +4,19 @@ public class Palindrome{
     Scanner input = new Scanner(System.in);
 	System.out.print("Enter a three-digit number: ");
 	int number = input.nextInt();
+    if (number < 100 || number > 999) {
+    	System.out.print("Invalid! Enter a three-digit number: ");
+        return;
+    }
 
-	int hundreds = number / 100;
-	int tens = number / 10;
+	int units = number % 10;
+    number /= 10;
+    int tens = number % 10;
+    number /= 10;
+    int hundreds =  number % 10;
+    
 
-	if (hundreds == tens) {
+	if (units == hundreds) {
 	System.out.println("The number is a palindrome");
 	}
 	else {

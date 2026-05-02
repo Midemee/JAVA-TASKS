@@ -5,14 +5,15 @@ public class ReverseNumber{
 	System.out.print("Enter a four-digit number: ");
 	int number = input.nextInt();
 
-	int stepOne = number / 1000;
-	int stepTwo = (number / 100) % 10;
-	int stepThree = (number / 10) % 10;
+	int stepOne = number % 10;
+    number /= 10;
+	int stepTwo = number % 10;
+    number /= 10;
+	int stepThree = number % 10;
+    number /= 10;
 	int stepFour = number % 10;
 
-	int reverse = stepFour + stepThree + stepTwo + stepOne;
-
-	System.out.printf("The result is %d", reverse);
+	System.out.printf("%d %d %d %d", stepOne, stepTwo, stepThree, stepFour);
 
     }
 } 
