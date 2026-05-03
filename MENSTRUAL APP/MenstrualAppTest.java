@@ -20,7 +20,8 @@ public class MenstrualAppTest{
         assertEquals(5,  result[1]);
         assertEquals(2026, result[2]);
     }
-
+    
+    @Test
     public void testThatTheNextPeriodRollsOverToNextYear() {
 
         int[] result = MenstrualApp.calculateNextPeriod(20, 12, 2026, 28);
@@ -38,6 +39,14 @@ public class MenstrualAppTest{
         assertEquals(2028, result[2]);
     }
 
+    @Test
+    public void testGetOvulationDate() {
+
+        int[] result = MenstrualApp.calculateOvulationDate(1, 4, 2026, 28);
+        assertEquals(15, result[0]);
+        assertEquals(4,  result[1]); 
+        assertEquals(2026, result[2]);
+}
 
 }
 

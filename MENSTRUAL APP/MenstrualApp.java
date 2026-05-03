@@ -30,5 +30,10 @@ public class MenstrualApp {
 
         return new int[]{nextDay, nextMonth, nextYear};
     }
+
+    public static int[] calculateOvulationDate(int day, int month, int year, int cycleLength) {
+        int daysUntilOvulation = cycleLength - 14;
+        return calculateNextPeriod(day, month, year, daysUntilOvulation);
+    }
 }
 

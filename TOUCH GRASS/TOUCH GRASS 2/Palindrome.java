@@ -17,10 +17,7 @@ public class Palindrome{
         if (firstStep == fifthStep && secondStep == fourthStep) {
             return true;
         }
-        else {
-            return false;
-        }
-
+        return false;
     }
 
     public static void main(String[]args){
