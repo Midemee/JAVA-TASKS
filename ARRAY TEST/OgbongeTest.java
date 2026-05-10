@@ -15,7 +15,7 @@ public class OgbongeTest{
     @Test
     public void testThatReverseArrayGivesArrayFromTheLastElement(){
         int [] numbers = {50, 20, 12, 8, 36, 200, 67};
-        int [] expectedReversedArray = {67,200, 36, 8, 12, 20, 50};
+        int [] expectedReversedArray = {67, 200, 36, 8, 12, 20, 50};
         int [] actualReversedArray = Ogbonge.reverseArray(numbers);
         assertArrayEquals(actualReversedArray, expectedReversedArray);
     }
