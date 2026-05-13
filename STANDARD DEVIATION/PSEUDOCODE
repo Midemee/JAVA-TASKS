@@ -1,0 +1,23 @@
+PSEUDOCODE
+Calculate the standard deviation of a set of numbers
+initialise an array with a set of numbers, size 12
+Write a function to calculate the variance
+calculate the average , sum of elements in the array divided by the length of the array 
+
+Calculate mean deviation
+declare a new empty array 
+for each number ion the old array, calculate squared differences (number- mean) raised to power 2
+Store the squared differences in athe new array
+
+Calculate Variance
+calculate the sum of all squared differences in the new array 
+divide the sum by the length of the array
+
+Get variance
+The result is variance
+Find square root of the variance
+
+
+//mean is the first order expected value
+//variance is the second order expected value
+
