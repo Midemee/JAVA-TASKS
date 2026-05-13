@@ -1,0 +1,33 @@
+TOP LEVEL
+Write a function that calculates final price... it collects the cart total price and the promo code
+
+STEP WISE REFINEMENT
+Function- Calculate final price
+takes in 2 parameters- cart total and promo code
+initialise discount to zero
+initialise final price to zero
+
+if cartTotal is greater than or equal to 5000 and its less than or equal to 14999 and promo code equals to "STARTER10"
+discount equals to cart total multiplied by 10 percent (10/100)= 0.1
+
+else if cartTotal is greater than or equal to 15000 and its less than or equal to 29999 and promo code equals to "BIGBOY20"
+discount equals to cart total multiplied by 20 percent (20/100)= 0.2
+
+else if cartTotal is greater than or equals 30000 and promo code equals to "OSHOFREE35"
+discount equals to cart total multiplied by 35 percent (35/100)= 0.35
+ 
+else if negative or invalid cart total, ThrowException...(Invalid Amount, can't be negative
+
+else carttotal is less than 5000, return the original amount
+
+Tests
+test that carttotal less than 5000 gives no discount, returns original price
+test that carttotal with fake promocode gives no discount, returns original price
+test that carttotal 5000 Above gives 10 percent discount
+test that carttotal 15000 Above gives 20 percent discount
+test that carttotal 30000 Above gives 35 percent discount
+test that each valid carttotal with fask promocode gives no discount, return original price
+test that zero carttotal returns zero
+test that negative cartotal throws exception invalid
+
+
