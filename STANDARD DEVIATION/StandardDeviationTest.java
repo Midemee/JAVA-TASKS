@@ -26,9 +26,30 @@ public class StandardDeviationTest{
     }
     
     @Test
-    public void testThatAnArrayReturnsTheStandardDeviation(){
+    public void testThatAnArrayReturnsCorrectStandardDeviation(){
     int [] numbers = {2, 3, 4, 1};
-    double actual = StandardDeviation.calculateMeanDeviation(numbers);
+    double actual = StandardDeviation.calculateStandardDeviation(numbers);
     assertEquals(1.118, actual, 0.01);
+    }
+    
+    @Test
+    public void testThatNegativeArrayNumbersReturnsCorrectStandardDeviation(){
+    int [] numbers = {-5, -3, -1};
+    double actual = StandardDeviation.calculateStandardDeviation(numbers);
+    assertEquals(1.63, actual, 0.01);
+    }
+    
+    @Test
+    public void testThatNumberInAnArrayReturnsCorrectSumOfSquaredDifferences() {
+    int[] numbers = {2, 4, 4, 4, 5, 5, 7, 9};
+    double actual = StandardDeviation.sumOfSquared(numbers);
+    assertEquals(32.0, actual, 0.01);
+    }
+    
+    @Test
+    public void testThatNegativeArrayNumbersReturnCorrectSumOfSquaredDifferences() {
+    int[] numbers = {-5, -3, -1};
+    double actual = StandardDeviation.sumOfSquared(numbers);
+    assertEquals(8.0, actual, 0.01);
     }
 }

@@ -8,21 +8,42 @@ public class StandardDeviation{
     }
      return mean;
     }
+
     
-    public static double calculateMeanDeviation(int [] numbers){
+    public static double sumOfSquared(int[] numbers) {
+        double mean = calculateMean(numbers);
+        double sum = 0;
+
+        for (int number : numbers) {
+            double difference = number - mean;
+            double squared = difference * difference;
+            sum += squared;
+        }
+        return sum;
+    }
+    
+
+    public static double calculateStandardDeviation(int[] numbers) {
+        double sum = sumOfSquared(numbers);
+        double variance = sum / numbers.length;
+        double standardDeviation = Math.sqrt(variance);
+        return standardDeviation;
+    }
+    
+    /*    public static double calculateMeanDeviation(int [] numbers){
     double mean = calculateMean(numbers);
-    double squared = 0;
     double sum = 0;
-    double variance = 0;
     double standardDeviation = 0;
     
     for(int number : numbers){
     double difference = number-mean;
-    squared = difference * difference;
+    double squared = difference * difference;
     sum += squared;
-    variance = sum / numbers.length;
+    double variance = sum / numbers.length;
     standardDeviation = Math.sqrt(variance);  
     }
     return standardDeviation;
-    }
+    }*/
+
 }
+

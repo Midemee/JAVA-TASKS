@@ -5,17 +5,13 @@ Write a function to calculate the variance
 calculate the average , sum of elements in the array divided by the length of the array 
 
 Calculate mean deviation
-declare a new empty array 
-for each number ion the old array, calculate squared differences (number- mean) raised to power 2
-Store the squared differences in athe new array
+for each number in the array, calculate squared differences 
+Each (number- mean) raised to power 2
+calculate the sum of all squared differences in the array
 
 Calculate Variance
-calculate the sum of all squared differences in the new array 
-divide the sum by the length of the array
-
-Get variance
-The result is variance
-Find square root of the variance
+To get variance, divide the sum by the length of the array
+To get Standard Deviation, Find square root of the variance
 
 
 //mean is the first order expected value
