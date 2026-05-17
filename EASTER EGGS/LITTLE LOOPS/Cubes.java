@@ -7,3 +7,11 @@ public class Cubes{
 
     }
 }
+
+/*int index = 1
+
+while( index <= 5){
+int cubes = index * index * index;
+index++;
+System.out.println(cubes)
+}*/

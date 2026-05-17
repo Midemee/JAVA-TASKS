@@ -1,5 +1,5 @@
 public class Factorial{
-    public static long factorial(int number){
+    public static int factorial(int number){
         if(number < 0){
             return -1;
         }

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class SumDigits {
 
-    public static int sumDigits(long number) {
+    public static int sumDigits(int number) {
         int sum = 0;
         while (number > 0) {
             sum += number % 10; 

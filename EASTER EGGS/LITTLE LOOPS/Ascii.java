@@ -1,13 +1,19 @@
 public class Ascii{
     public static void main(String[] args) {
 
-	char character = 'A';
+/*	char character = 'A';
 	while (character <= 'Z') {
-	String ascii = character;
-        character ++;
-	System.out.println(character + ascii);
-
-	}
+	int ascii = (int)character;
+	System.out.println(character + "=" + ascii);
+    character ++;
+	}*/
+	
+	for (char character = 'A'; character <= 'Z'; character++){
+    int ascii = (int)character;
+    System.out.println(character + "=" + ascii);
+    }
 
     }
 }
+
+
